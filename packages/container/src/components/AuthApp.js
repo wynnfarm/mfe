@@ -11,6 +11,7 @@ export default ({ onSignIn }) => {
       initialPath: history.location.pathname,
       onNavigate: ({ pathname: nextPathname }) => {
         const { pathname } = history.location;
+        console.log("onNavigate", pathname, nextPathname, onSignIn);
         if (pathname !== nextPathname) {
           history.push(nextPathname);
         }
