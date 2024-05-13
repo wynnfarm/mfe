@@ -1,5 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+console.log("Container - Webpack public path:", __webpack_public_path__);
+
+ReactDOM.render(<App />, document.querySelector("#root"));
